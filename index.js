@@ -3,14 +3,14 @@
 
 const handleKeyPress = (value) => {
 
-    if(Number.isNaN(value)){
+    if(isNaN(value)){
         handleSymbol(value)
     }else {
         handleNumber(value)
     }
 }
 const handleSymbol = (value)=> {
-    console.log(value)
+    console.log("value is Nan " + value)
 }
 
 const handleNumber =(value)=> {
