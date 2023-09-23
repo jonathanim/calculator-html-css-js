@@ -6,26 +6,31 @@
 
 .container {
     display: flex;
-    width: 1000px;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     margin: 50px auto;
-    align-items: center;
-    justify-content: center;
+   justify-content:center;
+   align-items: center;
 }
 
 .calculator-body{
-    width: 600px;
+    width: 500px;
     font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .row {
-    height: 200px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
 }
 
-.screen {
-    width: 100%;
+.screen{
+    display: block;
     background-color: black;
+    color:aliceblue;
+    text-align: right;
+}
+
+.cal-buttons-section {
 }
