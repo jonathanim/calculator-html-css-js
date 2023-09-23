@@ -1,3 +1,31 @@
-.test {
-    color: blue;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator-body{
+    width: 600px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    height: 200px;
+}
+
+.screen {
+    width: 100%;
+    background-color: black;
 }
