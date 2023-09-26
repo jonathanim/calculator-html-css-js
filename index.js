@@ -10,7 +10,26 @@ const handleKeyPress = (value) => {
     }
 }
 const handleSymbol = (value)=> {
-    console.log("value is Nan " + value)
+    console.log(value)
+
+    switch(value) {
+        case 'C':
+            screenValue.innerText = 0
+            break;
+        case '←':
+            // do something
+        case '÷':
+            break;
+
+        case '×':
+            break;
+        case '−':
+            break;
+        case '+':
+            break;
+        case '-':
+            break;
+    }
 }
 
 const handleNumber =(value)=> {
@@ -24,6 +43,8 @@ const handleNumber =(value)=> {
 function init() {
     const allkeybuttons = document.querySelectorAll('.cal-buttons')
     allkeybuttons.forEach(button => button.addEventListener("click", (e)=> handleKeyPress(e.target.innerText)))
+
+    const screenValue = document.querySelector('#screenValue')
 }
 
 
