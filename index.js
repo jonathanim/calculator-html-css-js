@@ -1,5 +1,6 @@
 
-
+let startingValue = '0'
+const screenValue = document.querySelector('#screenValue')
 
 const handleKeyPress = (value) => {
 
@@ -8,6 +9,9 @@ const handleKeyPress = (value) => {
     }else {
         handleNumber(value)
     }
+
+    refreshScreen()
+
 }
 const handleSymbol = (value)=> {
     console.log(value)
@@ -17,7 +21,7 @@ const handleSymbol = (value)=> {
             screenValue.innerText = 0
             break;
         case '←':
-            // do something
+         
         case '÷':
             break;
 
@@ -33,18 +37,23 @@ const handleSymbol = (value)=> {
 }
 
 const handleNumber =(value)=> {
-    const changeToNumber = parseInt(value)
-    console.log(changeToNumber)
+//     const convertToNumber = parseInt(value)
+//     if(startingValue == '0'){
+//         startingValue = value
+//     ""
+// working on logic
 }
 
 
-
+const refreshScreen =()=> {
+    screenValue.innerText = startingValue
+}
 
 function init() {
     const allkeybuttons = document.querySelectorAll('.cal-buttons')
     allkeybuttons.forEach(button => button.addEventListener("click", (e)=> handleKeyPress(e.target.innerText)))
 
-    const screenValue = document.querySelector('#screenValue')
+    
 }
 
 
